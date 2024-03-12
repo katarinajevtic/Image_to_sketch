@@ -1,5 +1,8 @@
-import cv2
+# Convert any image to a sketch using Python and OpenCv
+# Before using install OpenCv using pip install opencv-python
+# Replace 'img.jpg' with the path to your desired image file.
 
+import cv2
 
 def convert_to_sketch(image_path, output_path='sketch.png'):
 
@@ -26,5 +29,4 @@ def convert_to_sketch(image_path, output_path='sketch.png'):
     cv2.imwrite(output_path, sketch)
 
 
-# Example usage:
 convert_to_sketch('img.jpg')
